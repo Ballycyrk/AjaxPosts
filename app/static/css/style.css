@@ -11,6 +11,46 @@
   vertical-align: top;
 }
 
+.btn {
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: green;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 500px;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: gray;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 200px;
+  margin: 5px auto;
+  display: block;
+}
+
+h3  {
+  margin: 2px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px;
+}
+
+p {
+  color:  red;
+}
+
 img {
   width: 800px;
   height: auto;
