@@ -7,10 +7,10 @@ class Notes(Controller):
 
   def index(self):
     notes = self.models['Note'].all()
-    print notes
     return self.load_view('/notes/index.html', notes = notes)
 
   def create(self):
     new_note = request.form['note']
     self.models['Note'].create(new_note)
-    return redirect('/')
+    notes = self.models['Note'].all()
+    return self.load_view('/partials/_note.html', notes = notes)

@@ -7,8 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-
-
+        $('form').submit(function(){
+          $.post('/notes/create', $(this).serialize(), function(data) {
+            $('#notes').html(data);
+          });
+          return false;
+        });
       });
     </script>
   </head>
