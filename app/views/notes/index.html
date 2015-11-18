@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charvar='utf-8' />
+    <title>Everybody</title>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h3>My Posts</h3>
+      <div id="notes">
+        {% for note in notes %}
+          <div class="note">
+            <h5>{{ note['note'] }}</h5>
+          </div>
+         {% endfor %}
+      </div>
+      <form action='/notes/create' method='post'>
+        <h4>Add a note: </h4>
+        <textarea name='note'></textarea>
+        <input class='btn' type='submit'>
+      </form>
+    </div>
+  </body>
+</html>

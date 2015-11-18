@@ -1,6 +1,6 @@
 from system.core.router import routes
 
-routes['default_controller'] = 'Welcome'
+routes['default_controller'] = 'Notes'
 
 """
     Here is an example of the restful routes for users:
